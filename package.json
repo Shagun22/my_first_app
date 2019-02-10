@@ -9,7 +9,10 @@
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint && nsp check",
-    "test": "mocha"
+    "test": "mocha",
+    "start": "forever start app.js",
+    "stop": "forever stopall"
+
   },
   "dependencies": {
     "chai": "^4.2.0",
